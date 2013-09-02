@@ -91,7 +91,7 @@
       <file leaf-file-name="index.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="61" selection-start="52" selection-end="52" vertical-scroll-proportion="0.13111888">
+            <state line="5" column="30" selection-start="52" selection-end="52" vertical-scroll-proportion="0.13111888">
               <folding />
             </state>
           </provider>
@@ -707,7 +707,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="61" selection-start="52" selection-end="52" vertical-scroll-proportion="0.13111888">
+        <state line="5" column="30" selection-start="52" selection-end="52" vertical-scroll-proportion="0.13111888">
           <folding />
         </state>
       </provider>
