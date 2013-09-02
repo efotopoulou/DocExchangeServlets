@@ -62,7 +62,9 @@ public class getOTP extends HttpServlet {
 
             System.out.println("user_name: "+ user.getName() +" dd  "+ user.toString()+ " skatoules?");
 
-            String OTP = new BigInteger(130, random).toString(32);
+            //String OTP = new BigInteger(128, random).toString(32).substring(0, 16);
+
+            String OTP = "patatapatatapata" ;
 
             System.out.println("OTP"+OTP );
 
