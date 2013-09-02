@@ -90,7 +90,7 @@ public class Fetch extends HttpServlet {
             byte[] data =  getBytesFromFile(file);
 
             String base64FileString = Base64.encodeBase64String(data);
-            String DocContentBase64Enc = AESencrp.encrypt(base64FileString);
+            String DocContentBase64Enc = AESencrp.encrypt(base64FileString,OTP);
 
 
             //have to convert it to byte array
@@ -106,7 +106,7 @@ public class Fetch extends HttpServlet {
             //String DocContentBase64Enc = AESencrp.encrypt(password);
 
 
-            String DocContentBase64Dec = AESencrp.decrypt(DocContentBase64Enc);
+            String DocContentBase64Dec = AESencrp.decrypt(DocContentBase64Enc,OTP);
 
             //System.out.println("Plain Text : " + password);
             System.out.println("Encrypted Text : " + DocContentBase64Enc);

@@ -90,7 +90,7 @@ public class Store extends HttpServlet {
             //String DocContentBase64Enc = AESencrp.encrypt(password);
 
 
-            String DocContentBase64Dec = AESencrp.decrypt(DocContentBase64Enc);
+            String DocContentBase64Dec = AESencrp.decrypt(DocContentBase64Enc,OTP);
 
             //System.out.println("Plain Text : " + password);
             System.out.println("Encrypted Text : " + DocContentBase64Enc);
