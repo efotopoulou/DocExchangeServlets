@@ -1,0 +1,58 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+        <servlet-name>getOTP</servlet-name>
+        <servlet-class>org.ubi.maincontrol.getOTP</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Store</servlet-name>
+        <servlet-class>org.ubi.maincontrol.Store</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Fetch</servlet-name>
+        <servlet-class>org.ubi.maincontrol.Fetch</servlet-class>
+    </servlet>
+
+
+
+    <servlet-mapping>
+        <servlet-name>getOTP</servlet-name>
+        <url-pattern>/getOTP</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Store</servlet-name>
+        <url-pattern>/store</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Fetch</servlet-name>
+        <url-pattern>/fetch</url-pattern>
+    </servlet-mapping>
+
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+
+    <filter>
+        <filter-name>UserAuthFilter</filter-name>
+        <filter-class>org.ubi.maincontrol.UserAuthFilter </filter-class>
+        <init-param>
+            <param-name>avoid-urls</param-name>
+            <param-value>/login.jsp,/static.jsp</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>UserAuthFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <session-config>
+        <session-timeout>1</session-timeout>
+    </session-config>
+</web-app>
